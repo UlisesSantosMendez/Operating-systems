@@ -1,0 +1,21 @@
+El comando grep nos permite buscar, dentro de los archivos, las líneas que concuerdan con un 
+patrón. Bueno, si no especificamos ningún nombre de archivo, tomará la entrada estándar, con lo 
+que podemos encadenarlo con otros filtros. 
+ 
+Por defecto, grep imprime las líneas encontradas en la salida estándar. Es decir, que podemos 
+verlo directamente la pantalla, o re direccionar la salida estándar a un archivo. 
+ 
+Como tiene muchísimas opciones, vamos a ver tan sólo las más usadas: 
+ 
+-c En lugar de imprimir las líneas que coinciden, muestra el número de líneas que coinciden. 
+-e PATRON nos permite especificar varios patrones de búsqueda o proteger aquellos patrones de 
+búsqueda que comienzan con el signo -. 
+-r busca recursivamente dentro de todos los subdirectorios del directorio actual. 
+-v nos muestra las líneas que no coinciden con el patrón buscado. 
+-i ignora la distinción entre mayúsculas y minúsculas. 
+-n Numera las líneas en la salida. 
+-E nos permite usar expresiones regulares. Equivalente a usar egrep. 
+-o le indica a grep que nos muestre sólo la parte de la línea que coincide con el patrón. 
+-f ARCHIVO extrae los patrones del archivo que especifiquemos. Los patrones del archivo deben ir 
+uno por línea. 
+-H nos imprime el nombre del archivo con cada coincidencia. 
