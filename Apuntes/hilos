@@ -1,0 +1,15 @@
+Los hilos son conocidos como procesos ligeros, tiene que ver con la definición de como se crea un hilo
+Tanto los procesos como los hilos pueden llegar a ser concurrentes y paralelos, eso depende del hardware
+y como se van a ejecutar, el planificador decide en que unidades d eprocesamiento se va a ejecutar.
+Hay muchos hilos y procesos en ejecución por lo que si no hay suficiente hardware, todos son concurrentes
+sin embargo los hilos son procesos ligeros, cuando los procesos crean  nuevos procesos hijos
+se hace una copia exacta del proceso padre, a aprtir de esa copia exacta se crea un proceso hijo
+Cuando se va a crear un hilo se toma elementos del proceso por ejemplo la función que se va a convertir y 
+el hilo es más ligero que el proceso, los hilos necesitan a un proceso
+
+Si pensamos en una tarjeta gráfica, hilos y procesos pueden ser paralelos, 
+
+Otra característica de los hilos es que los hilos pueden comunicarse de manera nativa con otros hilos
+o con el proceso padre que los creo, a traves de la memoria global todos los hilos pueden comunicarse
+en ese recurso compartido todos pueden leer o escribir, si escriben en la misma variable global seria
+una inconsistencia de datos, 
